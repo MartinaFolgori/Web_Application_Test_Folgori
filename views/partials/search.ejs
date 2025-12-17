@@ -1,0 +1,68 @@
+<form class="d-flex mt-4 w-100 position-relative z-3" role="search" onsubmit="return false;">
+
+  <div class="position-relative flex-grow-1">
+
+    <input class="form-control form-control-lg" type="text" placeholder="Start exploring..." aria-label="Search" name="q" id="searchInput" />
+
+    <div class="position-absolute top-50 end-0 translate-middle-y d-flex align-items-center gap-2 me-3">
+
+      <a id="homeBtn" class="btn btn-outline-primary circle-icon-btn d-none">
+
+        <i class="bi bi-house"></i>
+
+      </a>
+
+      <a id="myBooksSearchBtn" class="btn btn-outline-primary circle-icon-btn">
+
+        <i class="bi bi-journal-bookmark"></i>
+
+      </a>
+
+      <button id="sortAZ" class="btn btn-outline-dark d-none p-0" style="width: 34px; height: 34px; border-radius: 50%;">
+
+        <i class="bi bi-sort-alpha-up"></i>
+
+      </button>
+
+      <button id="sortZA" class="btn btn-outline-dark d-none p-0" style="width: 34px; height: 34px; border-radius: 50%;">
+
+        <i class="bi bi-sort-alpha-down-alt"></i>
+
+      </button>
+
+      <button id="clearSearchBtn" class="btn btn-outline-dark d-none p-0" style="width: 34px; height: 34px; border-radius: 50%;">
+
+        <i class="bi bi-eraser"></i>
+
+      </button>
+
+      <button id="clearMyBooksBtn" class="btn btn-outline-danger d-none p-0" style="width: 34px; height: 34px; border-radius: 50%;">
+
+        <i class="bi bi-trash"></i>
+
+      </button>
+
+      <div class="dropdown ms-2">
+
+        <button class="btn btn-outline-dark dropdown-toggle" id="maxResultsDropdown" data-bs-toggle="dropdown">
+
+          <span id="maxResultsLabel">Results per page</span>
+
+        </button>
+
+        <ul class="dropdown-menu">
+
+          <li><button class="dropdown-item max-results-option" data-value="5">5 per page</button></li>
+          <li><button class="dropdown-item max-results-option" data-value="10">10 per page</button></li>
+          <li><button class="dropdown-item max-results-option" data-value="15">15 per page</button></li>
+          <li><button class="dropdown-item max-results-option" data-value="20">20 per page</button></li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
+  
+</form>

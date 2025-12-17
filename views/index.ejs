@@ -1,0 +1,53 @@
+<%- include('partials/header') %>
+
+<main>
+
+  <div class="container-md py-3 text-center">
+
+    <h1 class="mt-5">Book Search</h1>
+
+    <!--search-->
+    <div class="d-flex justify-content-center">
+
+      <%- include('partials/search') %>
+
+    </div>
+
+    <!--total results-->
+    <div id="resultsInfo" class="mt-3 text-start"></div>
+
+    <!--mybooks-->
+    <h2 id="myBooksTitle" class="mt-4 text-start d-none">MyBooks</h2>
+
+    <!--no book saved-->
+    <p id="myBooksEmptyMsg" class="text-muted mt-2 d-none">
+      You haven't saved any books yet.
+    </p>
+
+    <!--details modal-->
+    <%- include('partials/modal_details') %>
+
+    <!--google results-->
+    <div id="ajaxRow" class="row my-4"></div>
+
+    <!--mybooks results-->
+    <div id="myBooksRow" class="row my-4 d-none"></div>
+
+    <!--google pagination-->
+    <div id="ajaxPagination" class="d-flex justify-content-center gap-2 my-4">
+
+      <div id="paginationPrevious"></div>
+      <div id="paginationNumbers"></div>
+      <div id="paginationNext"></div>
+
+    </div>
+
+  </div>
+
+</main>
+
+<%- include('partials/footer') %>
+<%- include('partials/scripts') %>
+
+</body>
+</html>
